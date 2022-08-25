@@ -1,0 +1,91 @@
+
+
+body{
+    background-color: #858585; 
+}
+
+
+
+
+header{
+color: #2f4f56;
+ font-weight: bolder;
+ font-size: x-large;
+ background-color:#dddfd6;
+ text-align: center;  
+ height:fit-content; 
+ background-size: auto;
+ border-color: transparent;
+ border-style: none;
+ padding: auto;
+ margin:auto;
+}
+
+fieldset{
+border-color: transparent;
+border-style: none;
+   
+
+}
+
+body{
+    background-color:  #acacac; 
+} 
+
+h3{
+    color:#08605b;
+}
+
+
+
+
+
+ul{
+    list-style: none;
+    text-align: right;
+}
+
+.data{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: #2e414d;
+   
+
+}
+
+form{
+width: 250px;
+height:300px;
+border: 5px;
+    border-style: solid;
+    padding-right:100px;
+    margin-right: 800px;
+    margin-left: 800px;
+    margin-bottom: 50px;
+    
+    
+    
+  
+}
+
+
+    
+
+/*trying colors from Lindsay 
+
+* {
+    --accentcolor3: #c0e847;
+    --accentcolor4: #cbf828;
+    --accentcolor5: #32a7d9;
+    --accentcolor6: #079caf;
+    --accentcolor8: #08e2df;
+    --backgroundcolor9: #818181;
+    --backgroundcolor10: #acacac;
+    --backgroundcolor2: #dddfd6;
+    --textcolor11: #3c5764;
+    --textcolor12: #2f4f56;
+    --textcolor1: #2e414d;
+    --textcolor7: #08605b;
+}
+
