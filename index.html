@@ -14,36 +14,29 @@
 
 <div class="jumbotron jumbotron-fluid bg-dark">
   <div class="container">
-    <h1 class="display-4">Welcome!</h1>
-    <p class="lead">Checkout what's happening around the country.</p>
-    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
-      SIGN IN
-    </button>
-  </div>
-</div>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+    <h1 class="display-4 text-light">Welcome!</h1>
+    <p class="lead text-light">Checkout what's happening around the country.</p>
+    <form>
+      <div class="form-row">
+        <div class="col-2">
+          <input type="text" class="form-control" placeholder="City">
+        </div>
+        <div class="col-2">
+          <input type="text" class="form-control" placeholder="Zip">
+        </div>
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+          SEARCH
         </button>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
+    </form>
   </div>
 </div>
 
 <body>
-    
+
+
+
+
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
