@@ -83,7 +83,7 @@ function initPage() {
 
         ul.appendChild(li1);
         ul.appendChild(li2);
-      //  ul.appendChild(li3);
+        ul.appendChild(li3);
         ul.appendChild(li4);
 
 
