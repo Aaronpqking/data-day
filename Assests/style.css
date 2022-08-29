@@ -1,0 +1,12 @@
+li {
+
+    list-style: none;
+}
+fieldset {
+    width: 35%;
+    height: 10px;
+}
+button {
+    color:aliceblue;
+    background-color: blueviolet;
+}
