@@ -14,17 +14,16 @@ var parentDiv = document.querySelector("#parent-div");
 
 //variables to access the api
 var ApiKey = 'iRyUR14EE9gxvv8u34zWyr01Z2pGjQPh'
-var city = 'Columbus';
-var country ='US';
+// var city = 'Columbus';
+
+// Used a placegolder for postalCode from user. It should be an empty string
+var postalCode ='45202';
 // var state = 'OH';
 
-//queryURL = 'https://app.ticketmaster.com/discovery/v2/events.json?city&state&ApiKey'
-
-
-
 //fetch
-var queryURL ='https://app.ticketmaster.com/discovery/v2/events.json?' + '&countryCode=' + country + '&apikey=' +  ApiKey;
-  
+var queryURL ='https://app.ticketmaster.com/discovery/v2/events.venues.json?classificationName=music' + '&postalCode=45202&venue&apikey=' +  ApiKey;
+ // the classificationName call music and we can get the zip with the postal code. 
+
 
 // fetch(queryURL)
 // .then(function (response) {
@@ -68,12 +67,18 @@ fetch(queryURL)
       var ul = document.createElement('ul')
       var li1 = document.createElement('li');
       var li2 = document.createElement('li');
+      var li3 = document.createElement('img');
+     
 
       li1.textContent = "event name: " + data._embedded.events[0].name;
-      li2.textContent = "event name: " + data._embedded.events[1].name;
+      li2.textContent = "event name: " + data._embedded.events[0]._embedded.venues[0].postalCode;// this is the source of the zip code
+      li3.innerHTML = "img src='" + data._embedded.events[0].images[0].fallback;//I was working on getting the img to display. 
+       
+
 
       ul.appendChild(li1);
       ul.appendChild(li2);
+      ul.appendChild(li3);
 
       parentDiv.appendChild(ul);
     })

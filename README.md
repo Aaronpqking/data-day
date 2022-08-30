@@ -6,15 +6,17 @@ As a USER, I WANT to search a location and find activities (rest., music, movies
 
 ## An Evening at a Glance
 ***
+AS A USER I want to find something to do with friends
+WHEN I enter my zip code or city
+THEN I am shown choices of music events and local breweries to attend
 ***
 ### Description
 ***
-***
-### Table of contents it it gets long
-***
+Eventfully Now is a simple application to inquire about local music events and find a local brewery to visit before your show. Just enter your location!
 ***
 ### Installation Process
 ***
+
 ***
 ### Usage 
 ***
