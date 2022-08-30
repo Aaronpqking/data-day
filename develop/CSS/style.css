@@ -1,0 +1,12 @@
+/* .container .jumbotron {
+    padding-left: 60px;
+} */
+
+* {
+    position: relative;
+    display: block;
+}
+
+nav ul{
+    color: white;
+}
