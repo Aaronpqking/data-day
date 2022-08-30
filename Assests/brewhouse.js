@@ -13,6 +13,7 @@ fetch(apiRequest)
         var li2 = document.createElement('li');
         var li3 = document.createElement('li');
 
+
         li1.textContent = "nearby brewpubs: " + data[1].name;
         li2.textContent = "nearby brewpubs: " + data[0].name;
         li3.textContent = "nearby brewpubs: " + data[2].name;

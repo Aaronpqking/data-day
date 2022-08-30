@@ -1,4 +1,6 @@
 function initPage() {
+
+
   var inputEl = document.getElementById("city-input");
   var searchEl = document.getElementById("search-button");
   var divEventsEL = document.querySelector("#events");
@@ -14,50 +16,20 @@ function initPage() {
 
 
   var ApiKey = 'iRyUR14EE9gxvv8u34zWyr01Z2pGjQPh';
-  //var queryURL ='https://app.ticketmaster.com/discovery/v2/events.json?' + '&countryCode=' + country + '&apikey=' +  ApiKey;
+  
+  
   function getEventInfo() {
 
     var inputValue = inputEl.value;
     console.log(inputValue);
-    //  var country = inputValue;
-    //var postalCode =inputValue;
-     var state = inputValue; // this input works
-     var city = inputValue;
-    
+    var city = inputValue;
 
-    //console.log("this is the country value", country);
-    //var queryURL =
+    if(!city){
+      alert("Please enter city");
+    }
+         
+    var queryURL = 'https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&apikey=' + ApiKey +  '&city=' + city;
 
-    //search by country code
-    //   'https://app.ticketmaster.com/discovery/v2/events.json?' +
-    //   '&countryCode=' +
-    //   country +
-    //   '&apikey=' +
-    //   ApiKey;
-
-    //https://app.ticketmaster.com/discovery/v2/?postalCode=43230
-    //search by postalcode
-    // var queryURL ='https://app.ticketmaster.com/discovery/v2/' + '&postalCode=' + postalCode
-
-    //   '&apikey=' +
-    //   ApiKey;
-
-    //search by state code --working
-   // https://app.ticketmaster.com/discovery/v2/events.json?+stateCode=OH&apikey=iRyUR14EE9gxvv8u34zWyr01Z2pGjQPh
-    // var queryURL ='https://app.ticketmaster.com/discovery/v2/events.json?' + '&stateCode=' + state +
-    // '&apikey=' + ApiKey;
-
-    //search by city code
-    //https://app.ticketmaster.com/discovery/v2/events.json?+stateCode=OH&apikey=iRyUR14EE9gxvv8u34zWyr01Z2pGjQPh
-    // var queryURL ='https://app.ticketmaster.com/discovery/v2/events.json?' + '&city=' + city +
-    // '&apikey=' + ApiKey;
-
-
-    //search by state
-    //https://app.ticketmaster.com/discovery/v2/events.json?+stateCode=OH&apikey=iRyUR14EE9gxvv8u34zWyr01Z2pGjQPh
-    var queryURL ='https://app.ticketmaster.com/discovery/v2/events.json?' + '&stateCode=' + state + 
-    '&apikey=' + ApiKey;
-    
     fetch(queryURL)
       .then((response) => {
         return response.json();
@@ -65,32 +37,35 @@ function initPage() {
 
       .then((data) => {
         console.log(data);
-
-       // var img = data._embedded.events[0].images[0];
+        var img = document.createElement('img');
         var ul = document.createElement("ul");
-        var li1 = document.createElement("li");
-        var li2 = document.createElement("li");
-        var li3 = document.createElement('l1')
-        var imgEL = document.getElementById('#current-pic')
-        var li4 = document.createElement("li");
+        var liCity = document.createElement("li");
+        var liArtistName = document.createElement('li');
+        var liGenreMusic = document.createElement('li');
+        var cityData = data._embedded.events[0]._embedded.venues[0].city.name;
+        img.setAttribute('id', 'img-id')
+        img.setAttribute('src', data._embedded.events[0].images[0].url);
+        img.setAttribute('alt', 'image of group');
+        img.setAttribute('id', 'img-id')
+        var getArtistName = data._embedded.events[0].name;
+        var getMusicGenre = data._embedded.events[0].classifications[0].genre.name;
+        liGenreMusic.textContent = "Genre : " + getMusicGenre;
 
-        li1.textContent = "event name: " + data._embedded.events[0].name;
-        li2.textContent = "Url: " + data._embedded.events[0].url;
-      //  imgEL.setAttribute("src", img.url);
-       // li4.textContent = "event name: " + data.url;
+        liCity.textContent = "City : " + cityData;
+        liArtistName.textContent = "Artist : " + getArtistName;
 
-      //  li3.appendChild(imgEL);
-
-        ul.appendChild(li1);
-        ul.appendChild(li2);
-      //  ul.appendChild(li3);
-        ul.appendChild(li4);
-
-
+        ul.appendChild(img);
+        ul.appendChild(liCity);
+        ul.appendChild(liArtistName);
+        ul.appendChild(liGenreMusic);
         parentDiv.appendChild(ul);
+
       });
+
+
   }
 
   searchEl.addEventListener("click", getEventInfo);
 }
 initPage();
+
