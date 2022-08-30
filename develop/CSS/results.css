@@ -1,18 +1,18 @@
 
 
 body{
-    background-color: #fafafa; 
+background-color: #fafafa; 
 }
 
 
 
 
 header{
-color: #2f4f56;
+
  font-weight: bolder;
  font-size: x-large;
- background-color:#dddfd6;
- text-align: center;  
+ background-color:#32a7d9;
+ text-align: left;  
  height:fit-content; 
  background-size: auto;
  border-color: transparent;
@@ -27,6 +27,7 @@ color: #2f4f56;
 
 h4{
 color:#2e414d;
+
 }
 
 
@@ -44,43 +45,28 @@ justify-content: space-between;
 
 
 
+
 }
 
 
 
 
 .card{
-position: relative;
+
 margin: 10px;
 border-radius: 10px;
 background-color: rgba (255, 255, 255, 0.1 alpha);
 box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
 height: 350px;
 width:250px;
-display:inline-block;
+flex-direction: column;
+float:right;
+
 }
 
 
 
 
 
-
-
-/*trying colors from Lindsay 
-
-* {
-    --accentcolor3: #c0e847;
-    --accentcolor4: #cbf828;
-    --accentcolor5: #32a7d9;
-    --accentcolor6: #079caf;
-    --accentcolor8: #08e2df;
-    --backgroundcolor9: #818181;
-    --backgroundcolor10: #acacac;
-    --backgroundcolor2: #dddfd6;
-    --textcolor11: #3c5764;
-    --textcolor12: #2f4f56;
-    --textcolor1: #2e414d;
-    --textcolor7: #08605b;
-}
 
 
