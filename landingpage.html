@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assests/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <title>EVENT WEBSITE!</title>
+  </head>
+
+  <div class="jumbotron jumbotron-fluid bg-dark">
+    <div class="container">
+      <h1 class="display-4 text-light">Event Search!</h1>
+      <p class="lead text-light">Checkout what's happening in your area.</p>
+      <form>
+        <div class="form-row">
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="City" />
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="Zip" />
+          </div>
+          <button
+            type="button"
+            class="btn btn-dark"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            SEARCH
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <body>
+    <div class="card-deck vw-100">
+      <div class="card">
+        <img
+          src="./Assests/IMGS/claude-piche-EHbtjmz7hvw-unsplash.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Breweries!</h5>
+          <p class="card-text">
+            Wanting to try some local beer before your event? See what breweries
+            are near by!
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="./Assests/IMGS/colin-lloyd-8H72wMWxj90-unsplash.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Concerts!</h5>
+          <p class="card-text">
+            Want to discover some new music in your city? Check and see what
+            artists are in town!
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="./Assests/IMGS/taylor-heery-Frg0js5KBBQ-unsplash.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Events in City!</h5>
+          <p class="card-text">
+            Looking for a block party? Food truck rally? See what's happening in
+            your city!.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./develop/JS/script.js"></script>
+</html>
