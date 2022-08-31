@@ -4,7 +4,7 @@
 ***
 AS A USER I want to find something to do with friends
 WHEN I enter my zip code or city
-THEN I am shown choices of music events and local breweries to attend
+THEN I AM SHOWN choices of music events at local venues with nearby local breweries to attend
 ***
 ### Description
 ***
@@ -36,3 +36,7 @@ As a USER, I WANT to search a location and find activities (rest., music, movies
 #### Sources
 
 [TicketMaster API](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/#rate-limit)
+
+[OpenBrewery DB](https://www.openbrewerydb.org/documentation#list-breweries)
+
+[GitHub Docs](https://github.com/git-guides/git-pull)
