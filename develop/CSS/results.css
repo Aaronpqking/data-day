@@ -1,0 +1,72 @@
+
+
+body{
+background-color: #fafafa; 
+}
+
+
+
+
+header{
+
+ font-weight: bolder;
+ font-size: x-large;
+ background-color:#32a7d9;
+ text-align: left;  
+ height:fit-content; 
+ background-size: auto;
+ border-color: transparent;
+ border-style: none;
+ padding: auto;
+ margin:auto;
+}
+
+
+
+
+
+h4{
+color:#2e414d;
+
+}
+
+
+
+
+
+
+
+.flex-col{
+display:flex; 
+flex-direction: row;
+justify-content: space-between;
+ width: 80%;
+ margin: 0 auto;
+
+
+
+
+}
+
+
+
+
+.card{
+
+margin: 10px;
+border-radius: 10px;
+background-color: rgba (255, 255, 255, 0.1 alpha);
+box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+height: 350px;
+width:250px;
+flex-direction: column;
+float:right;
+
+}
+
+
+
+
+
+
+
