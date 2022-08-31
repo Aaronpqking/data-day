@@ -17,11 +17,11 @@ var ApiKey = 'iRyUR14EE9gxvv8u34zWyr01Z2pGjQPh'
 // var city = 'Columbus';
 
 // Used a placegolder for postalCode from user. It should be an empty string
-var postalCode ='45202';
+var postalCode ='45459';
 // var state = 'OH';
 
 //fetch
-var queryURL ='https://app.ticketmaster.com/discovery/v2/events.venues.json?classificationName=music' + '&postalCode=45202&venue&apikey=' +  ApiKey;
+var queryURL ='https://app.ticketmaster.com/discovery/v2/events.venues.json?classificationName=music' + '&postalCode=45459&venue&apikey=' +  ApiKey;
  // the classificationName call music and we can get the zip with the postal code. 
 
 
@@ -72,13 +72,13 @@ fetch(queryURL)
 
       li1.textContent = "event name: " + data._embedded.events[0].name;
       li2.textContent = "event name: " + data._embedded.events[0]._embedded.venues[0].postalCode;// this is the source of the zip code
-      li3.innerHTML = "img src='" + data._embedded.events[0].images[0].fallback;//I was working on getting the img to display. 
+    //  li3.innerHTML = "img src='" + data._embedded.events[0].images[0].fallback;//I was working on getting the img to display. 
        
 
 
       ul.appendChild(li1);
       ul.appendChild(li2);
-      ul.appendChild(li3);
+     // ul.appendChild(li3);
 
       parentDiv.appendChild(ul);
     })
