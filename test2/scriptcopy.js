@@ -37,28 +37,65 @@ function initPage() {
 
       .then((data) => {
         console.log(data);
-        var img = document.createElement('img');
+      //  var img = document.createElement('img');
+        // var ul = document.createElement("ul");
+        // var liCity = document.createElement("li");
+        // var liArtistName = document.createElement('li');
+       // var liGenreMusic = document.createElement('li');
+       // var cityData = data._embedded.events[0]._embedded.venues[0].city.name;
+        // img.setAttribute('id', 'img-id')
+        // img.setAttribute('src', data._embedded.events[0].images[0].url);
+        // img.setAttribute('alt', 'image of group');
+        // img.setAttribute('id', 'img-id')
+        // var getArtistName = data._embedded.events[0].name;
+       // var getMusicGenre = data._embedded.events[0].classifications[0].genre.name;
+        //liGenreMusic.textContent = "Genre : " + getMusicGenre;
+
+        // liCity.textContent = "City : " + cityData;
+        // liArtistName.textContent = "Artist : " + getArtistName;
+
+        // ul.appendChild(img);
+        // ul.appendChild(liCity);
+        // ul.appendChild(liArtistName);
+        // ul.appendChild(liGenreMusic);
+        // parentDiv.appendChild(ul);
+
+        var arrInfo = data._embedded.events;
+        console.log("this is the array = ", arrInfo);
+        var arrInfoLen =  arrInfo.length;
+        console.log(arrInfoLen);
+      //  data._embedded.events[i].images[i].url;     
+      //  data._embedded.events[0].images[0].url  original 
+      //   data._embedded.events[i].name
+      // data._embedded.events[0].name original
+     // data._embedded.events[0].classifications[0].genre.name original
+
+     
+
+        
+       for(var i = 0; i < arrInfoLen; i++) {
         var ul = document.createElement("ul");
-        var liCity = document.createElement("li");
-        var liArtistName = document.createElement('li');
-        var liGenreMusic = document.createElement('li');
-        var cityData = data._embedded.events[0]._embedded.venues[0].city.name;
+        var img = document.createElement('img');
         img.setAttribute('id', 'img-id')
-        img.setAttribute('src', data._embedded.events[0].images[0].url);
+        img.setAttribute('src', data._embedded.events[i].images[0].url);
         img.setAttribute('alt', 'image of group');
         img.setAttribute('id', 'img-id')
-        var getArtistName = data._embedded.events[0].name;
-        var getMusicGenre = data._embedded.events[0].classifications[0].genre.name;
-        liGenreMusic.textContent = "Genre : " + getMusicGenre;
-
-        liCity.textContent = "City : " + cityData;
+        var liArtistName = document.createElement('li');
+        var getArtistName = data._embedded.events[i].name;
+        // var liCity = document.createElement('li');
+        var liMusGenre = document.createElement('li');
+        // var newcityData = data._embedded.events[0]._embedded.venues[0].city.name;
+        var getMusicGenre = data._embedded.events[i].classifications[0].genre.name;
+        liMusGenre.textContent = "Genre : " + getMusicGenre;
+        // liCity.textContent = "City : " + newcityData;
         liArtistName.textContent = "Artist : " + getArtistName;
-
         ul.appendChild(img);
-        ul.appendChild(liCity);
         ul.appendChild(liArtistName);
-        ul.appendChild(liGenreMusic);
+        ul.appendChild(liMusGenre);
+        // ul.appendChild(liCity);
         parentDiv.appendChild(ul);
+       
+       }
 
       });
 
