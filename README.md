@@ -13,10 +13,12 @@ Eventfully Now is a simple application to inquire about local music events and f
 ### Installation Process
 ***
 
+
 ***
 ### Usage 
 ***
-As a USER, I WANT to search a location and find activities (rest., music, movies) SO THAT I can attend events (song/lyric API, event API) 
+
+When a user accesses our webpage by URL they will be brought to the landing page where they can search a location. When the location has been input then the user will have the option of choosing between local events and a brewery located near their chosen event venue. When user has chosen their preferred brewery and event then they will have successfully used our application.  
 ***
 
 ### Credits
