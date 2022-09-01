@@ -27,6 +27,7 @@ function initPage() {
     if(!city){
       alert("Please enter city");
     }
+    // window.location.href = "./resultspage.html"
          
     var queryURL = 'https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&apikey=' + ApiKey +  '&city=' + city;
 
