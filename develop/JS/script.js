@@ -59,3 +59,4 @@ fetch(apiRequest)
         document.getElementById("pubPhone" + i).innerText = pubPhone;
         document.getElementById("pubWeb" + i).innerText = pubWeb;
     }
+    
