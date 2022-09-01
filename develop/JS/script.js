@@ -42,19 +42,19 @@ function getEventInfo() {
         })
         .then(function (data) {
             console.log(data);
-        })
+       
+    
             for (var i = 0; i < data.length; i++) {
 
                 var pubName = data[i].name;
-                console.log(pubName);
                 var pubAddy = data[i].street;
                 var pubPhone = data[i].phone;
                 var pubWeb = data[i].website_url;
-                console.log(pubWeb);
 
                 document.getElementById("pubName" + i).innerText = pubName;
                 document.getElementById("pubAddy" + i).innerText = pubAddy;
                 document.getElementById("pubPhone" + i).innerText = pubPhone;
                 document.getElementById("pubWeb" + i).innerText = pubWeb;
+            }
+        })
     }
-}
