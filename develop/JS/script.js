@@ -17,7 +17,7 @@ function getEventInfo() {
 
             console.log(data);
     
-            for (var i = 0; i < data._embedded.events.length; i++) {
+            for (var i = 0; i < 9; i++) {
                 var eventName = data._embedded.events[i].name;
                 var eventVenue = data._embedded.events[i]._embedded.venues[0].name;
                 var img = document.getElementById('img' + i);
