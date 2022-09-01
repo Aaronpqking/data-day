@@ -1,13 +1,11 @@
-li {
+nav {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.nav-ak, .nav-la, .nav-rj, .nav-cs, .nav-hp, .nav-repo {
+    margin: 2rem;
+}
 
-    list-style: none;
-}
-fieldset {
-    width: 35%;
-    height: 10px;
-}
-button {
-    color:aliceblue;
-    background-color: blueviolet;
-}
 
