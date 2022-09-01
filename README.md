@@ -18,7 +18,14 @@ Eventfully Now is a simple application to inquire about local music events and f
 ### Usage 
 ***
 
-When a user accesses our webpage by URL they will be brought to the landing page where they can search a location. When the location has been input then the user will have the option of choosing between local events and a brewery located near their chosen event venue. When user has chosen their preferred brewery and event then they will have successfully used our application.  
+![picture](./Assests/IMGS/brewhouse_js_.gif)
+![picture](./Assests/IMGS/script_js.gif)
+![picture](./Results_page.gif)
+![picture](./Assests/IMGS/Landing_Page_HTML.gif)
+![picture](./Assests/IMGS/css%20screencap.JPG)
+
+
+When a patron accesses our webpage by URL they will be brought to the landing page where they can search a location. When the location has been input then the patron will have the option of choosing between local events and a brewery located near their chosen event venue. When the patron has chosen their preferred brewery and event then they will have successfully used our application.  
 ***
 
 ### Credits
@@ -44,3 +51,5 @@ When a user accesses our webpage by URL they will be brought to the landing page
 [GitHub Docs](https://github.com/git-guides/git-pull)
 
 [presentation](https://docs.google.com/presentation/d/1AKUStJSvZ79909nq-D1W3VIIjpzJEUTxdQpDhGA6q5s/edit#slide=id.g14990a2cdf2_0_5)
+
+
