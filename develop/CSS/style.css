@@ -1,0 +1,9 @@
+/* .container .jumbotron {
+    padding-left: 60px;
+} */
+aside {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}

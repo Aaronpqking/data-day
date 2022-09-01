@@ -14,17 +14,16 @@ var parentDiv = document.querySelector("#parent-div");
 
 //variables to access the api
 var ApiKey = 'iRyUR14EE9gxvv8u34zWyr01Z2pGjQPh'
-var city = 'Columbus';
-var country ='US';
+// var city = 'Columbus';
+
+// Used a placegolder for postalCode from user. It should be an empty string
+var postalCode ='45459';
 // var state = 'OH';
 
-//queryURL = 'https://app.ticketmaster.com/discovery/v2/events.json?city&state&ApiKey'
-
-
-
 //fetch
-var queryURL ='https://app.ticketmaster.com/discovery/v2/events.json?' + '&countryCode=' + country + '&apikey=' +  ApiKey;
-  
+var queryURL ='https://app.ticketmaster.com/discovery/v2/events.venues.json?classificationName=music' + '&postalCode=45459&venue&apikey=' +  ApiKey;
+ // the classificationName call music and we can get the zip with the postal code. 
+
 
 // fetch(queryURL)
 // .then(function (response) {
@@ -65,67 +64,24 @@ fetch(queryURL)
 
       console.log(data);
 
-
-      // var people=[
-      //   {first_name:"john",last_name:"doe"},
-      //   {first_name:"mary",last_name:"beth"}
-      // ];
-      // for (let i = 0; i < people.length; i++) { 
-      //   console.log(people[i].first_name);
-      // }
-
-
-      // for(var i = 0; i < data.length; i++){
-      //   //var result = data[i];
-      //   console.log("this is the result of loop ", data[1][i].name);
-      // }
-
-
-
       var ul = document.createElement('ul')
       var li1 = document.createElement('li');
       var li2 = document.createElement('li');
+      var li3 = document.createElement('img');
+     
 
       li1.textContent = "event name: " + data._embedded.events[0].name;
-      li2.textContent = "event name: " + data._embedded.events[1].name;
+      li2.textContent = "event name: " + data._embedded.events[0]._embedded.venues[0].postalCode;// this is the source of the zip code
+    //  li3.innerHTML = "img src='" + data._embedded.events[0].images[0].fallback;//I was working on getting the img to display. 
+       
+
 
       ul.appendChild(li1);
       ul.appendChild(li2);
+     // ul.appendChild(li3);
 
       parentDiv.appendChild(ul);
-
-      //data.forEach(b => console.log(b.data._embedded.events[b].name));
-
-
-
-
-      //   data.forEach((data, index) => {
-      //     console.log(`info${index} starts at ${data._embedded.events[index].name}`);
-      // })
-
-
-      // for(var i = 0; i < data.length; i++){
-      //   //var result = data[i];
-      //   console.log("this is the result of loop ", arr[0][0].name[i]);
-      // }
-
-      // data.map((values) => {
-      //  var result = values._embedded;
-      //  console.log(result);
-        
-      // });
-
-      // .then(({beats}) => {
-      //   beats.forEach((beat, index) => {
-      //     console.log(`Beat ${index} starts at ${beat.start}`);
-      //   })
-
-
-
-
-
-
-    }).then(response => response.forEach(data => console.log(data._embedded.city)));
+    })
 
   
 
@@ -220,16 +176,3 @@ fetch(queryURL)
       
 
 //     }
-
-
-// const  getBeerData = (city) => {
-//   var beerApi = `https://api.openbrewerydb.org/breweries?by_city=${encodeURIComponent(city)}`;
-//   fetch(beerApi)
-//     .then(res => {
-//       if (res.ok) {
-//         return res.json()
-//       } else {
-//         throw "Error";
-//       }
-//     }).then(res => res.forEach(b => console.log(b.name)));
-// }

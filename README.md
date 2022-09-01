@@ -4,7 +4,7 @@
 ***
 AS A USER I want to find something to do with friends
 WHEN I enter my zip code or city
-THEN I am shown choices of music events and local breweries to attend
+THEN I AM SHOWN choices of music events at local venues with nearby local breweries to attend
 ***
 ### Description
 ***
@@ -38,3 +38,7 @@ When a user accesses our webpage by URL they will be brought to the landing page
 #### Sources
 
 [TicketMaster API](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/#rate-limit)
+
+[OpenBrewery DB](https://www.openbrewerydb.org/documentation#list-breweries)
+
+[GitHub Docs](https://github.com/git-guides/git-pull)
