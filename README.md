@@ -42,3 +42,5 @@ When a user accesses our webpage by URL they will be brought to the landing page
 [OpenBrewery DB](https://www.openbrewerydb.org/documentation#list-breweries)
 
 [GitHub Docs](https://github.com/git-guides/git-pull)
+
+[presentation](https://docs.google.com/presentation/d/1AKUStJSvZ79909nq-D1W3VIIjpzJEUTxdQpDhGA6q5s/edit#slide=id.g14990a2cdf2_0_5)
