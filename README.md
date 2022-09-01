@@ -40,3 +40,5 @@ As a USER, I WANT to search a location and find activities (rest., music, movies
 [OpenBrewery DB](https://www.openbrewerydb.org/documentation#list-breweries)
 
 [GitHub Docs](https://github.com/git-guides/git-pull)
+
+[presentation](https://docs.google.com/presentation/d/1AKUStJSvZ79909nq-D1W3VIIjpzJEUTxdQpDhGA6q5s/edit#slide=id.g14990a2cdf2_0_5)
