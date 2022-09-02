@@ -5,6 +5,7 @@
 AS A USER I want to find something to do with friends
 WHEN I enter my zip code or city
 THEN I AM SHOWN choices of music events at local venues with nearby local breweries to attend
+![resultspage deployed](./Assests/IMGS/Screen%20Shot%202022-09-01%20at%208.56.52%20PM.png)
 ***
 ### Description
 ***
@@ -12,13 +13,8 @@ Eventfully Now is a simple application to inquire about local music events and f
 ***
 ### Installation Process
 ***
-
+![javascript](./Assests/IMGS/Screen%20Shot%202022-09-01%20at%209.00.49%20PM.png)
 ***
-### Usage 
-***
-As a USER, I WANT to search a location and find activities (rest., music, movies) SO THAT I can attend events (song/lyric API, event API) 
-***
-
 ### Credits
 ***
 [AK](https://github.com/aKingsView)
@@ -30,8 +26,6 @@ As a USER, I WANT to search a location and find activities (rest., music, movies
 [Hector](https://github.com/noviceprogrammeroh)
 
 [Lindsay](https://github.com/katsaymeow)
-
-
 
 #### Sources
 
